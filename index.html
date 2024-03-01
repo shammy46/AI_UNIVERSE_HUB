@@ -4,19 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universe Hub</title>
+    <title>AI UNIVERSE HUB</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
 </head>
 
 <body>
     <header>
         <h1 class="text-6xl font-extrabold text-center">AI Universe Hub</h1>
-
     </header>
     <main>
+        <section class="flex text-center justify-center my-5">
+            <button id="sort-card" class="btn bg-red-400">sort by date</button>
+        </section>
+
+
+        <section>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                
+            </div>
+
+            <div id="show-all-container" class=" text-center my-8">
+                <button onclick="handleShowAll()" class="btn bg-red-400">see more</button>
+              </div>
+
+        </section>
 
     </main>
     <footer>
@@ -24,7 +38,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
